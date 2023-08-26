@@ -1,0 +1,14 @@
+function solucao(personagem) {
+    personagem.vida -= 1;
+
+    if (personagem.vida <= 0) {
+        console.log ("FIM DE JOGO");
+    } else {
+        console.log (personagem.vida);
+    }
+}
+  
+function processData(input) {
+    const personagem = JSON.parse(input);
+  	solucao(personagem);
+} 
